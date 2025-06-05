@@ -31,25 +31,25 @@ public class Constant1
 
 
 // to find interest
-// public class Interset {
-//     public static void main(String args[]){
-//         Scanner sr= new Scanner(System.in);
+public class Interset {
+    public static void main(String args[]){
+        Scanner sr= new Scanner(System.in);
         
-//         System.out.print("Enter Principle Amount :");
-//         double p = sr.nextDouble();
-//         System.out.print("Enter Interest rate :");
-//         double r = sr.nextDouble();
-//         System.out.print("Enter time/ period :");
-//         double t = sr.nextDouble();
+        System.out.print("Enter Principle Amount :");
+        double p = sr.nextDouble();
+        System.out.print("Enter Interest rate :");
+        double r = sr.nextDouble();
+        System.out.print("Enter time/ period :");
+        double t = sr.nextDouble();
         
-//         double i = (p*r*t)/100;
-//         double total = p+i;
+        double i = (p*r*t)/100;
+        double total = p+i;
         
-//         System.out.println("Interest amount: "+ String.format("%.2f"), i);
-//         System.out.println("Total amount to pay: "+ total);
+        System.out.println("Interest amount: "+ String.format("%.2f"), i);
+        System.out.println("Total amount to pay: "+ total);
         
-//     }
-// }
+    }
+}
 //to convert ruppess into paisa
 public class Rpaisa{
     public static void main(String arg[]){
