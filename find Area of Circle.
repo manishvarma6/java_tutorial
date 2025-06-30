@@ -1,0 +1,13 @@
+
+//find the  Area of Circle.
+import java.util.Scanner;
+
+class Area {
+    public static void main(String[] args) {
+        Scanner sr= new Scanner(System.in);
+        System.out.println("Enter radius value");
+        double r = sr.nextdouble();
+        double area = Math.PI * r*r;
+        System.out.println("Area of circle of " + r + "is " + area);
+    }
+}
