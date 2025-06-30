@@ -1,0 +1,22 @@
+
+//to convert Integer numbers and Binary numbers.
+import java.util.Scanner;
+
+class Conversion {
+    public static void main(String[] args) {
+        Scanner sr= new Scanner(System.in);
+
+        System.out.print("Enter an integer to convert to binary: ");
+        int decimal = sr.nextInt();
+        String binary = Integer.toBinaryString(decimal);
+        System.out.println("Binary of " + decimal + " is: " + binary);
+        
+        
+                // Binary to Decimal
+        System.out.print("Enter a binary number to convert to decimal: ");
+        String binaryInput = sr.next();  // binary as string
+        int decimalFromBinary = Integer.parseInt(binaryInput, 2);
+        System.out.println("Decimal of " + binaryInput + " is: " + decimalFromBinary);
+
+    }
+}
