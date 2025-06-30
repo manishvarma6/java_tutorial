@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class VowelConsonantChecker {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+
+        System.out.print("Enter a letter: ");
+        char ch = sr.next().toLowerCase().charAt(0);
+
+        // Check if it's a letter
+        if (!Character.isLetter(ch)) {
+            System.out.println("Invalid input. Please enter an alphabet letter.");
+        } else {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                System.out.println(ch + " is a Vowel.");
+            } else {
+                System.out.println(ch + " is a Consonant.");
+            }
+        }
+
+        sr.close();
+    }
+}
