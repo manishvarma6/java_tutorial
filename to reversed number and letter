@@ -1,0 +1,59 @@
+
+//to reverse first and second number.
+import java.util.Scanner;
+
+class Num {
+    public static void main(String[] args) {
+        Scanner sr= new Scanner(System.in);
+        
+        System.out.println("Enter First number");
+        int a = sr.nextInt();
+        System.out.println("Enter Second number");
+        int b = sr.nextInt();
+    
+        int temp = a;
+        a = b;
+        b = temp;
+        
+        System.out.println("First number after swap" + a);
+        System.out.println("Second number after swap" + b);
+    }
+}
+
+
+//to reverse first and second number.
+import java.util.Scanner;
+
+class Toreversednum {
+    public static void main(String[] args) {
+        Scanner sr= new Scanner(System.in);
+        System.out.println("Enter number");
+        int num = sr.nextInt();
+        int reversed = 0;
+    
+        while(num != 0){
+            int digit = num %10;
+            reversed = reversed * 10+ digit;
+            num = num/10;
+        }
+        System.out.println("Reversed num " + reversed);
+    }
+}
+
+
+
+//to reverse Letter.
+import java.util.Scanner;
+
+class Toreversednum {
+    public static void main(String[] args) {
+        Scanner sr= new Scanner(System.in);
+        System.out.println("Enter Letter");
+        String word = sr.nextLine();
+        
+        // Use StringBuilder to reverse
+        String reversed = new StringBuilder(word).reverse().toString();
+
+        System.out.println("Reversed word " + reversed);
+    }
+}
