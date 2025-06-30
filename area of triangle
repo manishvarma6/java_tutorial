@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Areaoftriangle {
+    public static void main(String[] args) {
+        Scanner sr = new Scanner(System.in);
+
+        double length = sr.nextDouble();
+        System.out.print("Enter Length: ");
+        double width = sr.nextDouble();
+        System.out.print("Enter Width: ");
+        
+        double area = length * width;
+        
+        System.out.println("Area of triangle is " + area);
+
+        sr.close();
+    }
+}
